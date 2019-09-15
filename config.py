@@ -1,15 +1,15 @@
-# import os
-# class Config:
-#     '''
-#     General configuration parent class
-#     '''
-#     SOURCES_BASE_URL = 'https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
-#     ARTICLES_BASE_URL='https://newsapi.org/v2/everything?sources={}&apiKey={}'
+import os
+class Config:
+    '''
+    General configuration parent class
+    '''
+    SOURCES_BASE_URL = 'https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
+    ARTICLES_BASE_URL='https://newsapi.org/v2/everything?sources={}&apiKey={}'
 
-#     SOURCES_API_KEY = ('f80f23ee3b83401e951859c48cf71821')
-#     print(SOURCES_API_KEY)
-#     # NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
-#     SECRET_KEY = os.environ.get('SECRET_KEY')
+    SOURCES_API_KEY = ('f80f23ee3b83401e951859c48cf71821')
+    print(SOURCES_API_KEY)
+    # NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
+    SECRET_KEY = os.environ.get('SECRET_KEY')
     
 
 # class ProdConfig(Config):
