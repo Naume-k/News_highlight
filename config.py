@@ -8,8 +8,7 @@ class Config:
 
     SOURCES_API_KEY = 'f80f23ee3b83401e951859c48cf71821'
     print(SOURCES_API_KEY)
-    # NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
-    SECRET_KEY = os.environ.get('SECRET_KEY')
+   
     
 
 class ProdConfig(Config):
