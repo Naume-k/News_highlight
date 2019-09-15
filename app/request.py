@@ -34,25 +34,25 @@ def get_sources(category):
     
     return sources_results
 
-# def process_sources(sources_list):
-#     '''
-#     Function that processes the json results
-#     '''
-#     sources_results = []
+def process_sources(sources_list):
+    '''
+    Function that processes the json results
+    '''
+    sources_results = []
 
-#     for source_item in sources_list:
-#         id = source_item.get('id')
-#         name = source_item.get('name')
-#         description = source_item.get('description')
-#         url = source_item.get('url')
-#         category = source_item.get('category')
-#         country = source_item.get('country')
+    for source_item in sources_list:
+        id = source_item.get('id')
+        name = source_item.get('name')
+        description = source_item.get('description')
+        url = source_item.get('url')
+        category = source_item.get('category')
+        country = source_item.get('country')
 
-#         if id:
-#             sources_object = Sources(id,name,description,url,category,country)
-#             sources_results.append(sources_object)
+        if id:
+            sources_object = Sources(id,name,description,url,category,country)
+            sources_results.append(sources_object)
     
-#     return sources_results
+    return sources_results
 
 # def get_articles(id):
 #     '''
