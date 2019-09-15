@@ -7,14 +7,14 @@ api_key = None
 base_url = None
 base_articles_url = None
 
-# def configure_request(app):
-#     global api_key,base_url,base_articles_url
-#     api_key = app.config['SOURCES_API_KEY']
-#     base_url = app.config['SOURCES_BASE_URL']
-#     base_articles_url = app.config['ARTICLES_BASE_URL']
+def configure_request(app):
+    global api_key,base_url,base_articles_url
+    api_key = app.config['SOURCES_API_KEY']
+    base_url = app.config['SOURCES_BASE_URL']
+    base_articles_url = app.config['ARTICLES_BASE_URL']
 
-#     print(api_key)
-#     print(base_url)
+    print(api_key)
+    print(base_url)
 
 # def get_sources(category):
 #     '''
