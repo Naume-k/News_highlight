@@ -14,18 +14,18 @@ class Sources:
 
 
 
-# class Article:
+class Article:
 
-#     '''
-#     Article class that defines the article objects
-#     '''
+    '''
+    Article class that defines the article objects
+    '''
 
-#     def __init__(self,id,tittle,author,description,url,urlToImage,publishedAt):
-#         self.id = id
-#         self.tittle = tittle
-#         self.author = author
-#         self.description = description
-#         self.url = url
-#         self.urlToImage = urlToImage
-#         self.publishedAt = publishedAt
+    def __init__(self,id,tittle,author,description,url,urlToImage,publishedAt):
+        self.id = id
+        self.tittle = tittle
+        self.author = author
+        self.description = description
+        self.url = url
+        self.urlToImage = urlToImage
+        self.publishedAt = publishedAt
 
