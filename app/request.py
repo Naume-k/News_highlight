@@ -73,25 +73,25 @@ def get_articles(id):
         
     return articles_results
 
-# def process_articles(articles_list):
-#     '''
-#     Function that processes the json results for the articles
-#     '''
-#     articles_results = []
+def process_articles(articles_list):
+    '''
+    Function that processes the json results for the articles
+    '''
+    articles_results = []
     
-#     for article in articles_list:
-#         id = article.get('id')
-#         title = article.get('title')
-#         author = article.get('author')
-#         description = article.get('description')
-#         url = article.get('url')
-#         urlToImage = article.get('urlToImage')
-#         date_published = article.get('publishedAt')
+    for article in articles_list:
+        id = article.get('id')
+        title = article.get('title')
+        author = article.get('author')
+        description = article.get('description')
+        url = article.get('url')
+        urlToImage = article.get('urlToImage')
+        date_published = article.get('publishedAt')
 
-#         publishedAt = datetime(year=int(date_published[0:4]),month=int(date_published[5:7]),day=int(date_published[8:10]),hour=int(date_published[11:13]),minute=int(date_published[14:16]))
+        publishedAt = datetime(year=int(date_published[0:4]),month=int(date_published[5:7]),day=int(date_published[8:10]),hour=int(date_published[11:13]),minute=int(date_published[14:16]))
 
-#         if urlToImage:
-#             articles_object = Article(id,title,author,description,url,urlToImage,publishedAt)
-#             articles_results.append(articles_object)
+        if urlToImage:
+            articles_object = Article(id,title,author,description,url,urlToImage,publishedAt)
+            articles_results.append(articles_object)
         
-#     return articles_results
+    return articles_results
