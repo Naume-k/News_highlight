@@ -2,10 +2,10 @@ import urllib.request,json
 from .models import Sources,Article
 from datetime import datetime
 
-# # Getting api key
-# api_key = None
-# base_url = None
-# base_articles_url = None
+# Getting api key
+api_key = None
+base_url = None
+base_articles_url = None
 
 # def configure_request(app):
 #     global api_key,base_url,base_articles_url
